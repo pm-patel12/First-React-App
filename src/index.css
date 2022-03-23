@@ -1,13 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: lightblue;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: all linear 0.2s;
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+}
+
+.navbar-wrepper {
+  background: #fff;
+  padding: 5px 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.navbar-wrepper img {
+  width: 8rem;
+}
+
+.navbar-wrepper ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar-wrepper ul li,
+.navbar-wrepper ul li a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4e4e4e;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-wrepper .nav-menu li a:hover {
+  color: rgb(96, 155, 175);
+}
+
+.navbar-wrepper ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.navbar-wrepper .logs li:nth-child(1) {
+  background: lightblue;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.navbar-wrepper .logs li:nth-child(2) {
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.navbar-wrepper .logs li:nth-child(2):hover {
+  background: lightgrey;
+}
+
+.navbar-wrepper .logs li:nth-child(1):hover {
+  background: rgb(124, 194, 218);
+}
+
+/*  */
+/* home-section */
+/*  */
+
+.home-section {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  min-height: 80vh;
+}
+
+.home-section .left,
+.home-section .right {
+  flex: 1;
+}
+
+.home-section .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.home-section .right img {
+  width: 30rem;
+}
+
+.home-section .left h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(30, 127, 160);
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.home-section .left p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: lightslategray;
+  margin-right: 1rem;
+  margin-bottom: 10px;
+}
+
+.btn1 {
+  background: rgb(30, 127, 160);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 3rem;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+/*  */
+/* footer-wrepper */
+/*  */
+
+.footer-wrepper {
+  background: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* wrepper */
+
+.wrepper .container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.wrepper .container h1 {
+  color: rgb(56, 148, 179);
 }
